@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Encore\Admin\Traits\DefaultDatetimeFormat;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DataDxdb extends Model
+{
+    use HasFactory,DefaultDatetimeFormat;
+    protected $table = 'data_dxdbs';
+}

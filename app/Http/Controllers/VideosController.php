@@ -11,8 +11,7 @@ class VideosController extends Controller
     //    萤石云对讲
     public function videodj($id)
     {
-        $video = DB::table('videos')->find($id);
-
-        return view('videodj', compact('video'));
+        $avideo = DB::table('videos')->find($id);
+        return view('videodj', compact('avideo'));
     }
 }
